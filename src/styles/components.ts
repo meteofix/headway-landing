@@ -10,6 +10,9 @@ export const Block = styled.div`
   overflow: hidden;
   border-radius: 12px;
   box-sizing: border-box;
+  @media ${({ theme }) => theme.media.laptop} {
+    padding: 28px 24px 16px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -35,6 +38,7 @@ export const Paragraph = styled.p`
   margin-top: 0;
   margin-bottom: 0;
 `;
+
 export const ParagraphSecondary = styled(Paragraph)`
   opacity: 40%;
 `;

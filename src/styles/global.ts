@@ -12,6 +12,10 @@ export default createGlobalStyle`
     background-color: ${({ theme }) => theme.colors.bg};
   }
 
+  body > iframe {
+    display: none !important;
+  }
+
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

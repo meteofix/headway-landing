@@ -21,6 +21,8 @@ export const RatingRow = styled.div`
   height: 40px;
   margin-bottom: 5px;
   img {
+    width: 33px;
+    height: 32px;
     margin-left: 4px;
   }
 `;
@@ -36,4 +38,9 @@ export const Count = styled(Paragraph)`
   font-size: 14px;
   color: ${({ theme }) => theme.colors.secondary};
   margin-top: 5px;
+`;
+
+export const Stars = styled.img`
+  width: 89px;
+  height: 16px;
 `;

@@ -3,9 +3,6 @@ import { ITheme } from '../interfaces/styled';
 type sizeTypes = { [device: string]: string };
 
 const size: sizeTypes = {
-  mobileS: '320px',
-  mobileM: '375px',
-  mobileL: '425px',
   tablet: '768px',
   laptop: '1024px',
   laptopL: '1440px',
@@ -39,26 +36,19 @@ export const defaultTheme: ITheme = {
   },
 
   media: {
-    mobileS: `(min-width: ${size.mobileS})`,
-    mobileM: `(min-width: ${size.mobileM})`,
-    mobileL: `(min-width: ${size.mobileL})`,
-    tablet: `(min-width: ${size.tablet})`,
-    laptop: `(min-width: ${size.laptop})`,
-    laptopL: `(min-width: ${size.laptopL})`,
-    desktop: `(min-width: ${size.desktop})`,
-    desktopL: `(min-width: ${size.desktop})`,
+    tablet: `screen and (min-width: ${size.tablet})`,
+    laptop: `screen and (min-width: ${size.laptop})`,
+    laptopL: `screen and (min-width: ${size.laptopL})`,
+    desktop: `screen and (min-width: ${size.desktop})`,
   },
 
-  // in px
   sizes: {
-    header: { height: 64 },
-    container: { width: 375 },
-    footer: { height: 56 },
-  },
-
-  // z-index
-  order: {
-    header: 50,
-    footer: 100,
+    container: {
+      width: 375,
+      tabletWidth: 480,
+      laptopWidth: 660,
+      laptopLWidth: 800,
+      desktopWidth: 1024,
+    },
   },
 };

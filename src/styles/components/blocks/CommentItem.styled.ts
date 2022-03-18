@@ -26,8 +26,15 @@ export const CommentAuthor = styled.div`
   flex-direction: row;
   align-items: center;
   padding: 0;
+  cursor: pointer;
+`;
+export const Stars = styled.img`
+  width: 303px;
+  height: 16px;
 `;
 export const Avatar = styled.img`
+  width: 32px;
+  height: 32px;
   margin-right: 8px;
 `;
 export const SocialIcon = styled.img`

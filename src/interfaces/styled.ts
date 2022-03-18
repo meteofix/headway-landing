@@ -25,24 +25,19 @@ export interface ITheme {
   };
 
   media: {
-    mobileS: string;
-    mobileM: string;
-    mobileL: string;
     tablet: string;
     laptop: string;
     laptopL: string;
     desktop: string;
-    desktopL: string;
   };
 
   sizes: {
-    header: { height: number };
-    container: { width: number };
-    footer: { height: number };
-  };
-
-  order: {
-    header: number;
-    footer: number;
+    container: {
+      width: number;
+      tabletWidth: number;
+      laptopWidth: number;
+      laptopLWidth: number;
+      desktopWidth: number;
+    };
   };
 }

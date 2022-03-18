@@ -20,9 +20,9 @@ const RatingItem: FC<RatingItemProps> = ({
     <S.RatingItem>
       <S.RatingRow>
         <S.Rate color={color}>{rate}</S.Rate>
-        <img src={storeIcon} />
+        <img src={storeIcon} alt='Store icon' />
       </S.RatingRow>
-      <img src={stars} />
+      <S.Stars src={stars} alt='stars' />
       <S.Count>{ratingCount}</S.Count>
     </S.RatingItem>
   );

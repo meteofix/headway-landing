@@ -7,5 +7,7 @@ export const Block5 = styled(Block)`
 `;
 
 export const Image = styled.img`
+  width: 327px;
+  height: 304px;
   margin-bottom: -37px;
 `;

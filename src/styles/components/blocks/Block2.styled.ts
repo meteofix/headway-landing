@@ -27,10 +27,14 @@ export const ImageHBR = styled.img`
   left: 160px;
 `;
 export const Image04 = styled.img`
+  width: 265px;
+  height: 124px;
   margin-top: 61px;
   margin-bottom: 37px;
 `;
 export const Image05 = styled.img`
+  width: 265px;
+  height: 124px;
   margin-top: 44px;
   margin-bottom: 20px;
 `;

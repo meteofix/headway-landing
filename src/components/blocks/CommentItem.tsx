@@ -12,12 +12,12 @@ type CommentBlockProps = {
 const CommentItem: FC<CommentBlockProps> = ({ nickname, text, avatar }) => {
   return (
     <S.CommentBlock>
-      <img src={stars} />
+      <S.Stars src={stars} alt='rating' />
       <S.CommentText>{text}</S.CommentText>
       <S.CommentAuthor>
-        <S.Avatar src={avatar} />
+        <S.Avatar src={avatar} alt={nickname + '`s avatar'} />
         <S.Nickname>{nickname}</S.Nickname>
-        <S.SocialIcon src={instagram} />
+        <S.SocialIcon src={instagram} alt={'Instagram icon'} />
       </S.CommentAuthor>
     </S.CommentBlock>
   );

@@ -23,4 +23,5 @@ export const SocialIcons = styled.div`
 `;
 export const Icon = styled.img`
   margin-right: 15px;
+  cursor: pointer;
 `;

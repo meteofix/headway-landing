@@ -1,38 +1,28 @@
 import React, { FC } from 'react';
 import { Paragraph, SubTitle, Title } from '../../styles/components';
-import NYT from '../../ui/images/block2/image_201_NYT.svg';
-import AMAZON from '../../ui/images/block2/image_203_AMAZON.svg';
-import HBR from '../../ui/images/block2/image_202_HBR.svg';
-import image_204 from '../../ui/images/block2/image_204.svg';
-import image_205 from '../../ui/images/block2/image_205.svg';
+import { BLOCK2 } from '../../data/content';
 import * as S from '../../styles/components/blocks/Block2.styled';
 
 const Block2: FC = () => {
   return (
     <S.Block2>
-      <Title>Get smarter with the least effort</Title>
-
+      <Title>{BLOCK2.TITLE}</Title>
       <S.Reviewers>
-        <S.ImageNYT src={NYT} />
-        <S.ImageHBR src={HBR} />
-        <S.ImageAMAZON src={AMAZON} />
+        <S.ImageNYT src={BLOCK2.IMAGE_NYT.SRC} alt={BLOCK2.IMAGE_NYT.ALT} />
+        <S.ImageHBR src={BLOCK2.IMAGE_HBR.SRC} alt={BLOCK2.IMAGE_HBR.ALT} />
+        <S.ImageAMAZON
+          src={BLOCK2.IMAGE_AMAZON.SRC}
+          alt={BLOCK2.IMAGE_AMAZON.ALT}
+        />
       </S.Reviewers>
-      <SubTitle>Learn from the best</SubTitle>
-      <Paragraph>
-        Highlighted by top reviewers, we picked only the most outstanding
-        bestsellers for you.
-      </Paragraph>
-      <S.Image04 src={image_204} />
-      <SubTitle>Get key insights</SubTitle>
-      <Paragraph>
-        Major ideas in a bite-sized form. Long reads no more!
-      </Paragraph>
-      <S.Image05 src={image_205} />
-      <SubTitle>Build a reading habit</SubTitle>
-      <Paragraph>
-        Consistency is the key to top performance. Only 15 minutes per day to
-        make reading your brand new habit!
-      </Paragraph>
+      <SubTitle>{BLOCK2.SUBTITLE_1}</SubTitle>
+      <Paragraph>{BLOCK2.TEXT_1}</Paragraph>
+      <S.Image04 src={BLOCK2.IMAGE_4.SRC} alt={BLOCK2.IMAGE_4.ALT} />
+      <SubTitle>{BLOCK2.SUBTITLE_2}</SubTitle>
+      <Paragraph>{BLOCK2.TEXT_2}</Paragraph>
+      <S.Image04 src={BLOCK2.IMAGE_5.SRC} alt={BLOCK2.IMAGE_5.ALT} />
+      <SubTitle>{BLOCK2.SUBTITLE_3}</SubTitle>
+      <Paragraph>{BLOCK2.TEXT_3}</Paragraph>
     </S.Block2>
   );
 };

@@ -5,7 +5,7 @@ export const Block6 = styled(Block)`
   background-color: ${({ theme }) => theme.colors.bgBlock6};
   border: 1px solid ${({ theme }) => theme.colors.borderBlock6};
 `;
-export const BlueText = styled.div`
+export const BlueText = styled.span`
   display: inline;
   color: ${({ theme }) => theme.colors.link};
 `;
